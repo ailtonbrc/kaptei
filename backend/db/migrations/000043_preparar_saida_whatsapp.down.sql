@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS status_mensagens_whatsapp;
+DROP INDEX IF EXISTS idx_mensagens_whatsapp_evento_outbox;
+ALTER TABLE conversas_whatsapp DROP COLUMN IF EXISTS consentimento_marketing_evidencia;
+ALTER TABLE conversas_whatsapp DROP COLUMN IF EXISTS consentimento_marketing_origem;
+ALTER TABLE mensagens_whatsapp DROP COLUMN IF EXISTS erro_detalhe;
+ALTER TABLE mensagens_whatsapp DROP COLUMN IF EXISTS erro_codigo;
+ALTER TABLE mensagens_whatsapp DROP COLUMN IF EXISTS falhou_em;
+ALTER TABLE mensagens_whatsapp DROP COLUMN IF EXISTS lida_em;
+ALTER TABLE mensagens_whatsapp DROP COLUMN IF EXISTS entregue_em;
+ALTER TABLE mensagens_whatsapp DROP COLUMN IF EXISTS enviada_em;
+ALTER TABLE mensagens_whatsapp DROP COLUMN IF EXISTS evento_outbox_id;
+DELETE FROM mensagens_whatsapp WHERE identificador_externo IS NULL;
+ALTER TABLE mensagens_whatsapp ALTER COLUMN identificador_externo SET NOT NULL;

@@ -1,0 +1,1 @@
+ALTER TABLE contas_saas ADD COLUMN plano text NOT NULL DEFAULT 'GRATUITO';

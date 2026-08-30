@@ -1,0 +1,3 @@
+DROP INDEX IF EXISTS idx_clientes_tags;
+ALTER TABLE clientes DROP COLUMN IF EXISTS tags;
+ALTER TABLE clientes DROP COLUMN IF EXISTS preferencias;

@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS imovel_fotos;
+DROP TABLE IF EXISTS imoveis;

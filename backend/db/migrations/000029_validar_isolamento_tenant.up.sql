@@ -1,0 +1,10 @@
+ALTER TABLE imoveis VALIDATE CONSTRAINT imoveis_usuario_mesma_conta_fk;
+ALTER TABLE clientes VALIDATE CONSTRAINT clientes_corretor_mesma_conta_fk;
+ALTER TABLE leads VALIDATE CONSTRAINT leads_usuario_mesma_conta_fk;
+ALTER TABLE leads VALIDATE CONSTRAINT leads_imovel_mesma_conta_fk;
+ALTER TABLE leads VALIDATE CONSTRAINT leads_cliente_mesma_conta_fk;
+ALTER TABLE interacoes VALIDATE CONSTRAINT interacoes_cliente_mesma_conta_fk;
+ALTER TABLE interacoes VALIDATE CONSTRAINT interacoes_corretor_mesma_conta_fk;
+ALTER TABLE agendamentos VALIDATE CONSTRAINT agendamentos_usuario_mesma_conta_fk;
+ALTER TABLE agendamentos VALIDATE CONSTRAINT agendamentos_cliente_mesma_conta_fk;
+ALTER TABLE agendamentos VALIDATE CONSTRAINT agendamentos_imovel_mesma_conta_fk;

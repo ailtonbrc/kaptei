@@ -1,0 +1,39 @@
+# Windows
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Configs
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Backend
+backend/api.exe
+backend/servidor_web.exe
+backend/bin/
+backend/data/
+backend/check*.go
+backend/fix*.go
+backend/.env*
+!backend/.env.example
+frontend/.env*
+!frontend/.env.example
+/backups/
+
+# Ferramentas e binarios locais
+nssm.exe
+nssm.zip
+nssm_temp/
+
+# Logs
+*.log
+
+# Frontend (caso o do frontend não pegue)
+node_modules/
+dist/
+build/
+.DS_Store
